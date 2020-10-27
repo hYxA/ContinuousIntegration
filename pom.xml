@@ -33,11 +33,13 @@
                     <failIfNoTests>true</failIfNoTests>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.5</version>
                 <executions>
+
                     <execution>
                         <id>prepare-agent</id>
                         <phase>initialize</phase>
@@ -45,6 +47,7 @@
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+
                     <execution>
                         <id>report</id>
                         <phase>verify</phase>
@@ -52,6 +55,15 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
+
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+
                 </executions>
             </plugin>
         </plugins>
