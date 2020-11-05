@@ -49,24 +49,6 @@
                     </execution>
 
                     <execution>
-                        <!-- сгенерирует отчет -->
-                        <id>report</id>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-
-                    <execution>
-                        <!-- приготовит агенты gmail для отслеживания вызова кода -->
-                        <id>prepare-agent2</id>
-
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-
-
-                    <execution>
                         <id>check</id>
                         <goals>
                             <goal>check</goal>
@@ -76,7 +58,7 @@
                                 <rule>
                                     <limits>
                                         <limit>
-                                            <counter>INSTRUCTION</counter>
+                                            <counter>COMPLEXITY</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
@@ -86,6 +68,13 @@
                         </configuration>
                     </execution>
 
+                    <execution>
+                        <!-- сгенерирует отчет -->
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
 
                 </executions>
             </plugin>
