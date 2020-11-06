@@ -115,7 +115,7 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>COMPLEXITY</id>
+                        <id>LINE</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
@@ -124,7 +124,7 @@
                                 <rule>
                                     <limits>
                                         <limit>
-                                            <counter>COMPLEXITY</counter>
+                                            <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
