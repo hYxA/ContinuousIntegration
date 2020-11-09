@@ -48,65 +48,6 @@
                         </goals>
                     </execution>
 
-                    <!--   <execution>
-                           <id>INSTRUCTION</id>
-                           <goals>
-                               <goal>check</goal>
-                           </goals>
-                           <configuration>
-                               <rules>
-                                   <rule>
-                                       <limits>
-                                           <limit>
-                                               <counter>INSTRUCTION</counter>
-                                               <value>COVEREDRATIO</value>
-                                               <minimum>100%</minimum>
-                                           </limit>
-                                       </limits>
-                                   </rule>
-                               </rules>
-                           </configuration>
-                       </execution> -->
-
-                    <!--    <execution>
-                            <id>LINE</id>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <rule>
-                                        <limits>
-                                            <limit>
-                                                <counter>LINE</counter>
-                                                <value>COVEREDRATIO</value>
-                                                <minimum>100%</minimum>
-                                            </limit>
-                                        </limits>
-                                    </rule>
-                                </rules>
-                            </configuration>
-                        </execution>-->
-
-                    <!--   <execution>
-                           <id>BRANCH</id>
-                           <goals>
-                               <goal>check</goal>
-                           </goals>
-                           <configuration>
-                               <rules>
-                                   <rule>
-                                       <limits>
-                                           <limit>
-                                               <counter>BRANCH</counter>
-                                               <value>COVEREDRATIO</value>
-                                               <minimum>100%</minimum>
-                                           </limit>
-                                       </limits>
-                                   </rule>
-                               </rules>
-                           </configuration>
-                       </execution>-->
                     <execution>
                         <!-- сгенерирует отчет -->
                         <id>report</id>
@@ -124,7 +65,7 @@
                                 <rule>
                                     <limits>
                                         <limit>
-                                            <counter>INSTRUCTION</counter>
+                                            <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>100%</minimum>
                                         </limit>
